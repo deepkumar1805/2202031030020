@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 1</title>
+</head>
+<style>
+    .image{
+        height: 500px;
+        width: 500px;
+        background: url('C:\Users\DEEP\Downloads\img2.jpg');
+        object-fit: fill;
+    }
+    .image:hover{
+        background: url('C:\Users\DEEP\Downloads\download.jpg');
+    }
+</style>
+<body>
+    <video src="C:\Users\DEEP\Downloads\pexels-james-cheney-3568022-1920x1080-24fps.mp4" type="video/mp4">
+    <div class="image"></div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    .image-container img:nth-child(2) {
+  display: none; 
+}
+
+.image-container:hover img:nth-child(1) {
+  display: none;
+}
+
+.image-container:hover img:nth-child(2) {
+  display: block;
+}
+</style>
+<body>
+    <div class="image-container">
+        <img src="C:\Users\DEEP\Downloads\boys1.jpg" alt="Image 1">
+        <img src="C:\Users\DEEP\Downloads\girls_indo1.jpg" alt="Image 2">
+      </div>
+</body>
+</html>
