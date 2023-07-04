@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#txt_1").focus(function(){
+    $(this).css("background-color", "red");
+  });
+  $("#txt_1").blur(function(){
+    $(this).css("background-color", "blue");
+  });
+  $("#dob_1").focus(function(){
+    $(this).css("background-color", "red");
+  });
+  $("#dob_1").blur(function(){
+    $(this).css("background-color", "blue");
+  });
+});
+</script>
+</head>
+<body>
+
+Name: <input type="text" name="fullname" id="txt_1"><br>
+DOB:<input type="date" id="dob_1">
+
+</body>
+</html>

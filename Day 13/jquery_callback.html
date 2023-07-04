@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("#add").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="btn">Hide</button>
+
+<p id="add">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, perferendis repellendus voluptates a alias debitis eos doloribus ullam amet vel odit vero est possimus porro pariatur aliquid dolorem, neque obcaecati?</p>
+
+</body>
+</html>
