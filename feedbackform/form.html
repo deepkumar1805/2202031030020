@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedbackForm</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript.js"></script>
+    <script src="./jquerrui.js"></script>
+    <script src="./form.js"></script>
+</head>
+
+<body>
+    <div class="container" id="draggable">
+        <form onsubmit="return validationEvent()">
+            <h3 style="display: flex; justify-content: center;">BOOK FEEDBACK FORM</h3>
+            <label>BookName:</label><input type="text" id="name" placeholder="Enter BookName">
+            <label>Email:</label><input type="email" id="email" placeholder="Enter Your Email">
+            <label>Phone:</label><input type="text" id="phone" placeholder="Enter Your Phonenumber">
+            <label>Any Suggestion?</label><textarea id="message" cols="30" rows="4"
+                placeholder="Tell Me about Your experience?"></textarea>
+            <label>Ratings:</label>
+            <div class="star" id="str_1" style="font-size: 40px;">
+                <i class="fa fa-star" aria-hidden="true" id="st1"></i>
+                <i class="fa fa-star" aria-hidden="true" id="st2"></i>
+                <i class="fa fa-star" aria-hidden="true" id="st3"></i>
+                <i class="fa fa-star" aria-hidden="true" id="st4"></i>
+                <i class="fa fa-star" aria-hidden="true" id="st5"></i>
+            </div>
+            <button type="submit" id="btn_1">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
